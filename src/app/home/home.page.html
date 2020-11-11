@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div>
+    <h1>Hello World</h1>
+    <p>Start with Ionic </p>
+    <p>{{count}}</p>
+    <p>{{message}}</p>
+    <ion-button color="primary" (click)="incrementPressed()">Increment</ion-button>
+    <ion-button color="secondary"(click)="decrementPressed()">Decrement</ion-button>
+    <ion-button color="tertiary"(click)="resetPressed()">Reset</ion-button>
+    <ion-button color="danger"(click)="alertPressed()">Alert</ion-button>
+
+    <ion-button color="warning" (click)="toastPressed()">Multiple Button</ion-button>
+
+   <ion-button color="warning" (click)="actionPressed()">Multiple Button</ion-button>
+  </div>
+</ion-content>
